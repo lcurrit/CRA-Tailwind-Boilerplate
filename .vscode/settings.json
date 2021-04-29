@@ -8,5 +8,9 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "css.validate": false,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }
