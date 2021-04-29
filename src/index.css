@@ -1,8 +1,6 @@
 /* ./src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-.App-header {
-  @apply bg-red-800 !important;
-}
+@import './components/app/App.css';
