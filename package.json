@@ -28,11 +28,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npx lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*.{css,scss}": ["prettier --write --verbose"]
+    "src/**/*.{css,scss}": ["npx prettier --write --verbose"]
   },
   "eslintConfig": {
     "extends": [
