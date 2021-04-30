@@ -15,3 +15,7 @@
   height: 40vmin;
   @apply pointer-events-none animate-spin-slow motion-reduce:animate-none;
 }
+
+test {
+  some: code;
+}
