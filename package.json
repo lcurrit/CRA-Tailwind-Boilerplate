@@ -25,15 +25,13 @@
     "build": "craco build",
     "test": "craco test --detectOpenHandles",
     "eject": "react-scripts eject",
-    "pre-commit": "echo 'Pre-commit test change checks...' && exit 0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run pre-commit && npx lint-staged"
-    }
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.{css,scss}": ["npx prettier --write --verbose"]
+    "src/**/*.{css,scss}": [
+      "prettier --write --verbose"
+    ]
   },
   "eslintConfig": {
     "extends": [

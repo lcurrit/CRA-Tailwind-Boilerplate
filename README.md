@@ -207,6 +207,7 @@ The 'settings.json' file is used to store Workspace settings for VS Code. These 
 ## Husky
 
 `npm install --save-dev husky lint-staged`
+`npx husky-init`
 
 ## Resources
 
