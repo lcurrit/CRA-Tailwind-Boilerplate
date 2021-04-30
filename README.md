@@ -206,8 +206,25 @@ The 'settings.json' file is used to store Workspace settings for VS Code. These 
 
 ## Husky
 
-`npm install --save-dev husky lint-staged`
+`npm install --save-dev husky lint-staged`  
 `npx husky-init`
+
+The following changes should be on `package.json` in scripts.  The *prepare* script will install Husky the next install of the project.  The *pre-commit* script is used to run  lint-staged.
+
+	"scripts": {
+	  "prepare": "husky install",
+	  "pre-commit": "npx lint-staged"
+	},
+
+Add the following to `package.json` for Lint-Staged.  This tells the software to only run prettier on CSS and SCSS files that are staged.
+
+	"lint-staged": {
+	  "src/**/*.{css,scss}": [
+	    "prettier --write"
+	  ]
+	},
+
+Husky install should also create a `.husky/pre-commit` file.  Place `npm run pre-commit` in the file to run the script we added earlier.
 
 ## Resources
 
@@ -217,3 +234,4 @@ The 'settings.json' file is used to store Workspace settings for VS Code. These 
 - https://eslint.org/
 - https://reactjs.org/docs/create-a-new-react-app.html
 - https://tailwindcss.com/docs/guides/create-react-app
+- https://typicode.github.io/husky/#/
