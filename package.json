@@ -26,7 +26,7 @@
     "test": "craco test --detectOpenHandles",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
     "src/**/*.{css,scss}": [

@@ -33,8 +33,11 @@
 }
 
 a {
-  just: some;}
-b {random: stuff;
+  just: some;
 }
-c {trying:  
-totest;}
+b {
+  random: stuff;
+}
+c {
+  trying: totest;
+}
