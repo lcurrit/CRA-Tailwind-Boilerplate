@@ -24,11 +24,12 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test --detectOpenHandles",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "pre-commit": "echo 'Pre-commit test change checks...' && exit 0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run pre-commit && npx lint-staged"
     }
   },
   "lint-staged": {
