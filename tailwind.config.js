@@ -3,9 +3,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      animation: {
-        'spin-slow': 'spin 20s linear infinite',
-      },
       colors: {
         app: '#282c34',
       },
@@ -13,7 +10,6 @@ module.exports = {
   },
   variants: {
     extend: {},
-    animation: ['motion-reduce'],
   },
   plugins: [],
 };

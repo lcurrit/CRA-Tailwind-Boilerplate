@@ -1,23 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import { Navigation, Footer } from './components/layout';
+import { About, Contact, Home } from './components/pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Configuration Demo</p>
-        <a
-          className="App-link"
-          href="https://silversneakers.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SilverSneakers.com
-        </a>
-      </header>
-    </div>
+    <>
+      <Navigation />
+      <div className="container m-auto">
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
+      </div>
+      <Footer />
+    </>
   );
 }
 
