@@ -131,13 +131,26 @@ The 'settings.json' file is used to store Workspace settings for VS Code. These 
     {
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
-    	"source.fixAll": true
+    	  "source.fixAll": true
       },
       "eslint.validate": [
     	"javascript",
     	"javascriptreact",
     	"typescript",
     	"typescriptreact"
+      ]
+    }
+
+## Extensions.JSON
+
+Included in this project is a file called `extensions.json`. This is used to recommend the plugins used throughout the project when using VS Code.
+
+    {
+      "recommendations": [
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss"
       ]
     }
 
@@ -200,7 +213,7 @@ The 'settings.json' file is used to store Workspace settings for VS Code. These 
       {
         "css.validate": false,
         "editor.quickSuggestions": {
-      	"strings": true
+      	  "strings": true
         }
       }
 
