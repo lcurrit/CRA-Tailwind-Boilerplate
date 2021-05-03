@@ -1,9 +1,10 @@
 import React from 'react';
+import Title from '../components/Title';
 
-function Home() {
+function Contact() {
   return (
     <>
-      <h1>Home Page</h1>
+      <Title title="Contact" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
         consequuntur?
@@ -12,4 +13,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Contact;
