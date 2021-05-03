@@ -126,19 +126,20 @@ EditorConfig for VS Code is a recommended extension. It attempts to enforce codi
 
 ## Settings.JSON
 
-The 'settings.json' file is used to store Workspace settings for VS Code. These settings validate and save each file. (Not sure if we NEED this.)
+The 'settings.json' file is used to store Workspace settings for VS Code. These settings validate and save each file. (Not sure if we NEED this.) Additionally added setting to always save end of lines as "\n".
 
     {
       "editor.formatOnSave": true,
       "editor.codeActionsOnSave": {
     	  "source.fixAll": true
       },
-      "eslint.validate": [
-    	"javascript",
-    	"javascriptreact",
-    	"typescript",
-    	"typescriptreact"
-      ]
+        "eslint.validate": [
+    	  "javascript",
+    	  "javascriptreact",
+    	  "typescript",
+    	  "typescriptreact"
+      ],
+      "files.eol": "\n"
     }
 
 ## Extensions.JSON
