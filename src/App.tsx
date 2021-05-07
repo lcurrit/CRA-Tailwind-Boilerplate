@@ -5,12 +5,14 @@ import { About, Contact, Home } from './pages';
 
 function App() {
   return (
-    <div className="application">
+    <div className="app">
       <Navigation />
-      <div className="container m-auto">
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
+      <div className="content">
+        <div className="container m-auto">
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+        </div>
       </div>
       <Footer />
     </div>
