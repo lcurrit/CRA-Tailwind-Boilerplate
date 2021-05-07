@@ -240,6 +240,11 @@ Add the following to `package.json` for Lint-Staged. This tells the software to 
 
 Husky install should also create a `.husky/pre-commit` file. Place `npm run pre-commit` in the file to run the script we added earlier.
 
+## Additional Tech
+
+- React Helmet
+- React Router Dom
+
 ## Resources
 
 - https://dev.to/s2engineers/how-to-make-eslint-work-with-prettier-avoiding-conflicts-and-problems-57pi

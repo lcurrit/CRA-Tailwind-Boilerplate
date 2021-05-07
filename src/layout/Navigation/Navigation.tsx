@@ -4,7 +4,7 @@ import './navigation.css';
 
 function Navigation() {
   return (
-    <div className="navigation text-center">
+    <div className="nav">
       <NavLink exact to="/" className="nav-item">
         Home
       </NavLink>
