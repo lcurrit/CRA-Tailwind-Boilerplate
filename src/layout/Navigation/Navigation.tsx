@@ -4,8 +4,8 @@ import './navigation.css';
 
 function Navigation() {
   return (
-    <div className="container m-auto">
-      <nav>
+    <nav>
+      <div className="container m-auto">
         <NavLink exact to="/" className="nav-item">
           Home
         </NavLink>
@@ -15,8 +15,8 @@ function Navigation() {
         <NavLink to="/contact" className="nav-item">
           Contact
         </NavLink>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
 
