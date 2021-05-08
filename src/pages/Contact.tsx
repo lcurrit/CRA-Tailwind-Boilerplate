@@ -1,10 +1,10 @@
 import React from 'react';
-import Title from '../components/Title';
+import Header from '../components/header/Header';
 
 function Contact() {
   return (
     <>
-      <Title title="Contact" />
+      <Header>Contact</Header>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
         consequuntur?

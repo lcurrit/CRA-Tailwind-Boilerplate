@@ -1,10 +1,10 @@
 import React from 'react';
-import Title from '../components/Title';
+import Header from '../components/header/Header';
 
 function About() {
   return (
     <>
-      <Title title="About" subtitle="The Best About Page Ever" />
+      <Header subtitle="The Best About Page Ever">About</Header>
       <div className="overflow-auto my-4">
         <img
           src="https://placedog.net/200"

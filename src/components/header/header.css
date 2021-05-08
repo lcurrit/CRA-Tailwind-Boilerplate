@@ -1,0 +1,6 @@
+header {
+  @apply text-center mb-4;
+  div {
+    @apply italic;
+  }
+}
