@@ -2,21 +2,28 @@ import React from 'react';
 import './header.css';
 
 interface HeaderProps {
+  backgroundUrl?: string;
   children: React.ReactNode;
-  subtitle?: string;
+  headerMinHeight?: number;
 }
 
-const Header = ({ children, subtitle }: HeaderProps) => {
+const Header = ({ backgroundUrl, children, headerMinHeight }: HeaderProps) => {
   return (
-    <header>
-      <h1>{children}</h1>
-      {subtitle !== '' && <div>{subtitle}</div>}
+    <header
+      className={backgroundUrl !== '' ? 'header-background' : ''}
+      style={{
+        backgroundImage: `url(${backgroundUrl})`,
+        minHeight: `${headerMinHeight}px`,
+      }}
+    >
+      <div>{children}</div>
     </header>
   );
 };
 
 Header.defaultProps = {
-  subtitle: '',
+  backgroundUrl: '',
+  headerMinHeight: '',
 };
 
 export default Header;

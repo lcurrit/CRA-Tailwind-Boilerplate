@@ -1,6 +1,7 @@
 header {
-  @apply text-center mb-4;
-  div {
-    @apply italic;
+  @apply flex items-center justify-center mb-4 py-4 bg-blue-500 text-center;
+  &.header-background {
+    @apply bg-center bg-cover bg-blend-soft-light;
+    min-height: 200px;
   }
 }
