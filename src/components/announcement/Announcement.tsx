@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './announcement.css';
 
-// https://learnersbucket.com/examples/react/create-alert-box-in-react/
 interface AnnouncementProps {
   children: React.ReactNode;
 }
 
-const Header = ({ children }: AnnouncementProps) => {
-  return <div className="announcement">{children}</div>;
+const Announcement = ({ children }: AnnouncementProps) => {
+  const [showAlert, setShowAlert] = useState(true);
+  const closeButton = () => {
+    setShowAlert(false);
+  };
+
+  return (
+    <>
+      {showAlert && (
+        <div className="announcement">
+          {children}
+          <button type="button" onClick={closeButton}>
+            Close
+          </button>
+        </div>
+      )}
+    </>
+  );
 };
 
-export default Header;
+export default Announcement;
