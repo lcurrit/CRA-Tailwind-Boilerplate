@@ -16,10 +16,12 @@ const Announcement = ({ children }: AnnouncementProps) => {
       {showAlert && (
         <div className="announcement">
           <div className="container mx-auto">
-            {children}
-            <button type="button" onClick={closeButton}>
-              Close
-            </button>
+            <div className="flex items-center">
+              <div className="flex-grow">{children}</div>
+              <button type="button" onClick={closeButton}>
+                Close
+              </button>
+            </div>
           </div>
         </div>
       )}

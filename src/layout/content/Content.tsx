@@ -7,7 +7,7 @@ import './content.css';
 function Content() {
   return (
     <>
-      <Announcement>Put the latest emergency here!</Announcement>
+      <Announcement>Site still under maintenance.</Announcement>
       <div className="content">
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />

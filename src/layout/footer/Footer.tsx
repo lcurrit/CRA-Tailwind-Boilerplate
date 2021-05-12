@@ -4,7 +4,9 @@ import './footer.css';
 function Footer() {
   return (
     <footer>
-      <div className="container m-auto">Footer content!</div>
+      <div className="container m-auto">
+        Create React App w/TailwindCSS by Levi Currit
+      </div>
     </footer>
   );
 }
