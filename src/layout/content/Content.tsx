@@ -7,7 +7,9 @@ import './content.css';
 function Content() {
   return (
     <>
-      <Announcement>Site still under maintenance.</Announcement>
+      <Route exact path="/">
+        <Announcement>Site still under maintenance.</Announcement>
+      </Route>
       <div className="content">
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
