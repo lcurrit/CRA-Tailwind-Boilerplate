@@ -14,7 +14,7 @@ function Home() {
       >
         <h1>Home</h1>
       </Header>
-      <div className="my-4 px-4">
+      <div className="my-4">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus
           beatae quo placeat. Iste ab repellendus cupiditate, autem consectetur

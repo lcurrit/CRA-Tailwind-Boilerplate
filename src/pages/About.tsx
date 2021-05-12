@@ -14,7 +14,7 @@ function About() {
           This <em>could</em> be the best page.
         </h2>
       </Header>
-      <div className="overflow-auto my-4 px-4">
+      <div className="overflow-auto my-4">
         <img
           src="https://placedog.net/200/200"
           alt="Placeholder"

@@ -15,10 +15,12 @@ const Announcement = ({ children }: AnnouncementProps) => {
     <>
       {showAlert && (
         <div className="announcement">
-          {children}
-          <button type="button" onClick={closeButton}>
-            Close
-          </button>
+          <div className="container mx-auto">
+            {children}
+            <button type="button" onClick={closeButton}>
+              Close
+            </button>
+          </div>
         </div>
       )}
     </>

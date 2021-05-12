@@ -9,11 +9,9 @@ function Content() {
     <>
       <Announcement>Put the latest emergency here!</Announcement>
       <div className="content">
-        <div className="container mx-auto">
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-        </div>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
       </div>
     </>
   );

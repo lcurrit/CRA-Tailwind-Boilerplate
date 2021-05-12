@@ -1,6 +1,6 @@
 .announcement {
-  @apply bg-blue-900 text-blue-100 text-center;
+  @apply py-2 bg-blue-900 text-blue-100 text-center;
   button {
-    @apply m-2 px-2 py-1 rounded bg-blue-300;
+    @apply mx-2 px-2 py-1 rounded bg-blue-300;
   }
 }

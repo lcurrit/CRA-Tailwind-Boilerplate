@@ -11,7 +11,7 @@ function Contact() {
       <Header>
         <h1>Contact</h1>
       </Header>
-      <div className="my-4 px-4">
+      <div className="my-4">
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi alias
           quaerat voluptatibus animi, culpa ipsa eos cum, magnam odio
