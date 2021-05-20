@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Banner, Header } from '../components';
+import { Header } from '../components';
 
 function Home() {
   return (
@@ -14,9 +14,9 @@ function Home() {
       >
         <h1>Home</h1>
       </Header>
-      <div>
-        <Banner>Let&apos;s style this thing!</Banner>
-      </div>
+
+      {/* <Banner>Let&apos;s style this thing!</Banner> */}
+
       <div className="my-4">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus

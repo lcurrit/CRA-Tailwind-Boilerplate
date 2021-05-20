@@ -1,41 +1,52 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import emailjs from 'emailjs-com';
+
 import Header from '../components/header/Header';
 
 function Contact() {
+  // https://dashboard.emailjs.com/admin/
+  const serviceID = process.env.REACT_APP_serviceID!;
+  const templateID = process.env.REACT_APP_templateID!;
+  const userID = process.env.REACT_APP_userID!;
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+    emailjs.sendForm(serviceID, templateID, e.target, userID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <>
       <Helmet>
-        <title>The Best Movies Ever | Contact</title>
+        <title>Contact</title>
       </Helmet>
       <Header>
         <h1>Contact</h1>
       </Header>
       <div className="my-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi alias
-          quaerat voluptatibus animi, culpa ipsa eos cum, magnam odio
-          praesentium maiores architecto maxime, quia fugiat modi dolorum at
-          nisi officia explicabo. Nemo sint quibusdam accusamus, mollitia harum
-          ab dignissimos ad vitae a voluptatem obcaecati, esse voluptatum
-          impedit officia dolores soluta.
-        </p>
-        <p>
-          Explicabo odit possimus aut hic tempora sit cupiditate delectus fuga,
-          quam consequuntur? Aliquam, itaque. Voluptate repudiandae dolore
-          doloribus neque, molestiae nam vitae rerum placeat, ipsum aspernatur,
-          fugiat atque nisi at beatae voluptatum possimus quidem voluptas iusto
-          ducimus odio similique laboriosam numquam dolorem? Saepe, quia
-          repellat? Odit cumque tenetur sequi? Ad.
-        </p>
-        <p>
-          Neque doloribus aperiam nihil aspernatur eligendi necessitatibus unde
-          in ab distinctio repellendus deleniti laborum ea, quaerat quidem
-          impedit rem, fuga sed quos facere. Totam aliquid ipsa consectetur,
-          mollitia rem recusandae amet ducimus veritatis, expedita corrupti
-          similique illum sapiente odio dolores culpa provident? Illum,
-          sapiente? Laboriosam ex amet dignissimos dolorum quod.
-        </p>
+        <form action="" onSubmit={sendEmail} className="contact-form">
+          <input type="hidden" name="contact_number" />
+          <label htmlFor="user_name" className="block mb-2">
+            Name <input type="text" name="user_name" id="user_name" />
+          </label>
+
+          <label htmlFor="user_email" className="block mb-2">
+            Email <input type="email" name="user_email" id="user_email" />
+          </label>
+
+          <label htmlFor="message" className="block mb-2">
+            Message <textarea name="message" id="message" />
+          </label>
+
+          <input type="submit" value="Send" />
+        </form>
       </div>
     </>
   );
