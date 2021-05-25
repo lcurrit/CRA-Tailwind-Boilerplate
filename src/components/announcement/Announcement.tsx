@@ -18,7 +18,7 @@ const Announcement = ({ children }: AnnouncementProps) => {
           <div className="container mx-auto">
             <div className="flex items-center">
               <div className="flex-grow">{children}</div>
-              <button type="button" onClick={closeButton}>
+              <button type="button" className="btn" onClick={closeButton}>
                 Close
               </button>
             </div>

@@ -23,19 +23,19 @@ function ContactForm() {
   return (
     <form onSubmit={sendEmail} className="contact-form">
       <input type="hidden" name="contact_number" />
-      <label htmlFor="user_name" className="block mb-2">
+      <label htmlFor="user_name">
         Name <input type="text" name="user_name" id="user_name" />
       </label>
 
-      <label htmlFor="user_email" className="block mb-2">
+      <label htmlFor="user_email">
         Email <input type="email" name="user_email" id="user_email" />
       </label>
 
-      <label htmlFor="message" className="block mb-2">
+      <label htmlFor="message">
         Message <textarea name="message" id="message" />
       </label>
 
-      <input type="submit" value="Send" />
+      <input className="btn" type="submit" value="Send" />
     </form>
   );
 }

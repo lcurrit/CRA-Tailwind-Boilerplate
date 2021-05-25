@@ -35,3 +35,9 @@ body,
     @apply mb-4 px-4;
   }
 }
+
+@layer utilities {
+  .btn {
+    @apply mx-1 px-3 pb-2 pt-1 rounded border-none shadow-sm bg-blue-400 hover:bg-blue-500 text-white cursor-pointer;
+  }
+}
