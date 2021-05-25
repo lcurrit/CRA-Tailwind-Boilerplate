@@ -1,5 +1,5 @@
 nav {
-  @apply bg-gray-200  py-4 text-center;
+  @apply bg-gray-200 py-4 text-center;
 }
 .nav-item {
   @apply inline-block;
