@@ -18,7 +18,7 @@ function About() {
         <img
           src="https://placedog.net/200/200"
           alt="Placeholder"
-          className="float-left clear-left mb-4 mr-4"
+          className="float-left clear-left mb-4 mx-4"
           width={200}
           height={200}
         />
