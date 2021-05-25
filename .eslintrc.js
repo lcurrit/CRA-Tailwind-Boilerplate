@@ -30,6 +30,7 @@ module.exports = {
       node: {
         extensions: ['.ts', '.tsx'],
       },
+      typescript: {},
     },
   },
 };
