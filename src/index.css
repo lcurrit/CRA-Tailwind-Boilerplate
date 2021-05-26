@@ -39,7 +39,8 @@ body,
 /* Utility Classes */
 @layer utilities {
   .btn {
-    @apply mx-1 px-3 pb-2 pt-1 rounded border-none shadow-sm bg-blue-600 hover:bg-blue-700 text-white cursor-pointer;
+    line-height: normal;
+    @apply mx-1 px-3 py-2 rounded border-none shadow-sm bg-blue-600 hover:bg-blue-700 text-white cursor-pointer;
     &.active {
       @apply bg-blue-700;
     }
