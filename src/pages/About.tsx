@@ -4,7 +4,7 @@ import { Header, SEO } from 'components';
 function About() {
   return (
     <>
-      <SEO pageTitle="About" />
+      <SEO seoPageTitle="About" />
       <Header>
         <h1>About</h1>
         <h2>

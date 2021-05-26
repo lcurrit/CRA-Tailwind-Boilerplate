@@ -2,23 +2,38 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 interface seoProps {
-  pageTitle?: string;
+  seoSiteName?: string;
+  seoPageTitle?: string;
+  seoDescription?: string;
+  seoKeywords?: string;
 }
 
-const SEO = ({ pageTitle }: seoProps) => {
-  let title = `CRA w/Tailwind`;
-  if (pageTitle !== '') {
-    title = `${title} | ${pageTitle}`;
+const SEO = ({
+  seoSiteName,
+  seoPageTitle,
+  seoDescription,
+  seoKeywords,
+}: seoProps) => {
+  let title = seoSiteName;
+  if (seoPageTitle !== '') {
+    title = `${seoSiteName} | ${seoPageTitle}`;
   }
+
   return (
     <Helmet>
       <title>{title}</title>
+      <meta name="description" content={seoDescription} />
+      <meta name="keywords" content={seoKeywords} />
     </Helmet>
   );
 };
 
 SEO.defaultProps = {
-  pageTitle: '',
+  seoSiteName: 'CRA w/Tailwind',
+  seoPageTitle: '',
+  seoDescription:
+    'Test application built with Create React App using Tailwindcss and Typescript.',
+  seoKeywords: 'CRA, React, TailwindCSS, Typescript',
 };
 
 export default SEO;

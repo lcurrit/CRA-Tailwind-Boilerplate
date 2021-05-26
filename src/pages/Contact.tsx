@@ -4,7 +4,7 @@ import { Header, ContactForm, SEO } from 'components';
 function Contact() {
   return (
     <>
-      <SEO pageTitle="Contact" />
+      <SEO seoPageTitle="Contact" />
       <Header>
         <h1>Contact</h1>
       </Header>
