@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 
 import './contactform.css';
 
-function ContactForm() {
+const ContactForm = () => {
   const [sent, setSent] = useState(false);
 
   // https://dashboard.emailjs.com/admin/
@@ -46,6 +46,6 @@ function ContactForm() {
       )}
     </>
   );
-}
+};
 
 export default ContactForm;

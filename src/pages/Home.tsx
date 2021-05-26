@@ -1,13 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Header } from 'components';
 
 function Home() {
   return (
     <>
-      <Helmet>
-        <title>Home</title>
-      </Helmet>
       <Header
         backgroundUrl="https://placedog.net/600/200"
         headerMinHeight={150}

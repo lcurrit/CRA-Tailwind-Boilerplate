@@ -1,13 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Header } from 'components';
+import { Header, SEO } from 'components';
 
 function About() {
   return (
     <>
-      <Helmet>
-        <title>About</title>
-      </Helmet>
+      <SEO pageTitle="About" />
       <Header>
         <h1>About</h1>
         <h2>

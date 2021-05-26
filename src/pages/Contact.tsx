@@ -1,13 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { Header, ContactForm } from 'components';
+import { Header, ContactForm, SEO } from 'components';
 
 function Contact() {
   return (
     <>
-      <Helmet>
-        <title>Contact</title>
-      </Helmet>
+      <SEO pageTitle="Contact" />
       <Header>
         <h1>Contact</h1>
       </Header>
