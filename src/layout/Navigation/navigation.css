@@ -3,7 +3,4 @@ nav {
 }
 .nav-item {
   @apply inline-block;
-  &.active {
-    @apply bg-blue-500;
-  }
 }

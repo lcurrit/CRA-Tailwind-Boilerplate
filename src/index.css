@@ -39,6 +39,9 @@ body,
 /* Utility Classes */
 @layer utilities {
   .btn {
-    @apply mx-1 px-3 pb-2 pt-1 rounded border-none shadow-sm bg-blue-400 hover:bg-blue-500 text-white cursor-pointer;
+    @apply mx-1 px-3 pb-2 pt-1 rounded border-none shadow-sm bg-blue-600 hover:bg-blue-700 text-white cursor-pointer;
+    &.active {
+      @apply bg-blue-700;
+    }
   }
 }
