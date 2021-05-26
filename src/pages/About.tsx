@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>The Best Movies Ever | About</title>
+        <title>About</title>
       </Helmet>
       <Header>
         <h1>About</h1>

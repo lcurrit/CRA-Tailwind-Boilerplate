@@ -30,6 +30,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "serve": "serve -s build",
     "test": "craco test --detectOpenHandles",
     "eject": "react-scripts eject",
     "prepare": "husky install",

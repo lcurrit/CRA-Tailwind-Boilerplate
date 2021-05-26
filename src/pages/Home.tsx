@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>The Best Movies Ever | Home</title>
+        <title>Home</title>
       </Helmet>
       <Header
         backgroundUrl="https://placedog.net/600/200"
@@ -14,8 +14,6 @@ function Home() {
       >
         <h1>Home</h1>
       </Header>
-
-      {/* <Banner>Let&apos;s style this thing!</Banner> */}
 
       <div className="my-4">
         <p>

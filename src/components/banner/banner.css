@@ -1,6 +1,0 @@
-.banner-container {
-  @apply container mx-auto bg-black text-center;
-}
-.banner-content {
-  @apply inline-block p-8 m-8 border-8 border-green-400 text-yellow-300;
-}
