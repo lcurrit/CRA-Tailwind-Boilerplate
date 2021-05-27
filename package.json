@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/core": "^7.13.16",
     "@craco/craco": "^6.1.2",
+    "@storybook/react": "^6.2.9",
     "@tailwindcss/forms": "^0.3.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -34,7 +35,9 @@
     "test": "craco test --detectOpenHandles",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "lint-staged": {
     "src/**/*.{css,scss}": [
@@ -45,6 +48,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -60,6 +73,11 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/node-logger": "^6.2.9",
+    "@storybook/preset-create-react-app": "^3.1.7",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
     "autoprefixer": "^9.8.6",
