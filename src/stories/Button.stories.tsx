@@ -6,9 +6,7 @@ import { Button, ButtonProps } from './Button';
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+  argTypes: { backgroundColor: { control: 'color' } },
 } as Meta;
 
 // eslint-disable-next-line react/jsx-props-no-spreading
