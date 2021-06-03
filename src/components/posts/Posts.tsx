@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useEffect, useState } from 'react';
 import axios, { CancelTokenSource } from 'axios';
+import './posts.css';
 
 const fetchURL = 'http://jsonplaceholder.typicode.com/posts/?_limit=10';
 
@@ -61,11 +62,9 @@ const Posts = () => {
         </button>
       )}
       {posts.map((post) => (
-        <div key={post.id}>
-          {post.id}
-          <br />
-          {post.title}
-          <hr />
+        <div key={post.id} className="card mb-4 py-4 bg-gray-300">
+          <h3 className="px-4 font-bold capitalize">{post.title}</h3>
+          <p>{post.body}</p>
         </div>
       ))}
       {error && <div>{error}</div>}

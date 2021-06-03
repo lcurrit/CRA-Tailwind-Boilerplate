@@ -1,0 +1,3 @@
+.card p:first-letter {
+  @apply uppercase;
+}
