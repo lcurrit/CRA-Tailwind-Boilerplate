@@ -57,9 +57,12 @@ const Posts = () => {
   return (
     <div>
       {loading && (
-        <button type="button" onClick={handleCancelClick}>
-          Cancel
-        </button>
+        <div className="loading">
+          <div className="my-4 text-2xl text-gray-500">Loading...</div>
+          <button className="btn" type="button" onClick={handleCancelClick}>
+            Cancel
+          </button>
+        </div>
       )}
       {posts.map((post) => (
         <div key={post.id} className="card mb-4 py-4 bg-gray-300">

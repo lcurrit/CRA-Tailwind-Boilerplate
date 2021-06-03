@@ -1,3 +1,6 @@
+.loading {
+  @apply text-center;
+}
 .card p:first-letter {
   @apply uppercase;
 }
